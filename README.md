@@ -92,7 +92,7 @@ Other Style Guides
 ## References
 
   <a name="references--prefer-const"></a><a name="2.1"></a>
-  - [2.1](#references--prefer-const) Използвайте `const` за всички ваширеференции; избягвайте в тези случаи `var`. вижте: [`prefer-const`](http://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign.html)
+  - [2.1](#references--prefer-const) Използвайте `const` за всички ваши референции. Избягвайте в тези случаи `var`. вижте: [`prefer-const`](http://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign.html)
 
     > Защо? Това ви гарантира, че няма да предефинирате своите стойности, което може да доведе до множество грешки в кода и трудното му разбиране.
 
@@ -107,7 +107,7 @@ Other Style Guides
     ```
 
   <a name="references--disallow-var"></a><a name="2.2"></a>
-  - [2.2](#references--disallow-var) Ако все пак трябва презапишете стойноста ползвайте `let` вместо `var`. вижте: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
+  - [2.2](#references--disallow-var) Ако все пак трябва да презапишете стойността ползвайте `let` вместо `var`. вижте: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
 
     > Защо? `let` е с блоков обхват на видимост а не с функционален обхват както е при `var`.
 
@@ -126,7 +126,7 @@ Other Style Guides
     ```
 
   <a name="references--block-scope"></a><a name="2.3"></a>
-  - [2.3](#references--block-scope) Имайте предвид че `let` и `const` са с блоков обхват на видимост.
+  - [2.3](#references--block-scope) Незабравяйте че `let` и `const` са с блоков обхват на видимост.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
