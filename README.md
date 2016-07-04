@@ -54,7 +54,7 @@ Other Style Guides
 ## Types
 
   <a name="types--primitives"></a><a name="1.1"></a>
-  - [1.1](#types--primitives) **Primitives**: When you access a primitive type you work directly on its value.
+  - [1.1](#types--primitives) **Primitives**: Когато работите с примитивни типове, вие работите директно с техните стойности.
 
     + `string`
     + `number`
@@ -72,7 +72,7 @@ Other Style Guides
     ```
 
   <a name="types--complex"></a><a name="1.2"></a>
-  - [1.2](#types--complex)  **Complex**: When you access a complex type you work on a reference to its value.
+  - [1.2](#types--complex)  **Complex**: Когато работите с комплексни типове, вие работите с референция към техните стойности.
 
     + `object`
     + `array`
@@ -92,9 +92,9 @@ Other Style Guides
 ## References
 
   <a name="references--prefer-const"></a><a name="2.1"></a>
-  - [2.1](#references--prefer-const) Use `const` for all of your references; avoid using `var`. eslint: [`prefer-const`](http://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign.html)
+  - [2.1](#references--prefer-const) Използвайте `const` за всички ваширеференции; избягвайте в тези случаи `var`. вижте: [`prefer-const`](http://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign.html)
 
-    > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
+    > Защо? Това ви гарантира, че няма да предефинирате своите стойности, което може да доведе до множество грешки в кода и трудното му разбиране.
 
     ```javascript
     // bad
@@ -107,9 +107,9 @@ Other Style Guides
     ```
 
   <a name="references--disallow-var"></a><a name="2.2"></a>
-  - [2.2](#references--disallow-var) If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
+  - [2.2](#references--disallow-var) Ако все пак трябва презапишете стойноста ползвайте `let` вместо `var`. вижте: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
 
-    > Why? `let` is block-scoped rather than function-scoped like `var`.
+    > Защо? `let` е с блоков обхват на видимост а не с функционален обхват както е при `var`.
 
     ```javascript
     // bad
@@ -126,7 +126,7 @@ Other Style Guides
     ```
 
   <a name="references--block-scope"></a><a name="2.3"></a>
-  - [2.3](#references--block-scope) Note that both `let` and `const` are block-scoped.
+  - [2.3](#references--block-scope) Имайте предвид че `let` и `const` са с блоков обхват на видимост.
 
     ```javascript
     // const and let only exist in the blocks they are defined in.
